@@ -1,17 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="main.css">
-    <title>Video Example</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3D Explore</title>
+<link rel="stylesheet" href="main.css">
 </head>
 <body>
 
-<h1>3D Explore</h1>
+<!-- Fond animé -->
+<div class="stars"></div>
+<div class="nebula"></div>
 
-<video width="640" height="360" controls>
-    <source src="AR_video.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-</video>
-<h2> Come Support us !! </h2>
+<!-- Bouton contact en haut à droite -->
+<a href="mailto:m.jewasinski@student.helmo.be" class="contact-fixed">Contact Us</a>
+
+<div class="page-container">
+
+    <!-- Header avec logo et titre -->
+    <header>
+        <img src="logo.png" alt="Logo 3D Explore" class="logo">
+        <h1>3D Explore</h1>
+    </header>
+
+    <!-- Contenu principal -->
+    <main class="main-content">
+        <video controls>
+            <source src="AR_video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="video-controls">
+            <button class="btn" onclick="document.querySelector('video').play()">Play</button>
+            <button class="btn" onclick="document.querySelector('video').pause()">Pause</button>
+            <a class="btn" href="AR_video.mp4" download>Download</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 3D Explore</p>
+    </footer>
+
+</div>
+
 </body>
 </html>
+
+
