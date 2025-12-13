@@ -191,3 +191,70 @@ footer p {
 body {
     position: relative;
 }
+/* ========================= */
+/* ===== FIX MOBILE ONLY === */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+    body, html {
+        overflow: auto;
+        height: auto;
+    }
+
+    .page-container {
+        width: 100%;
+        height: auto;
+        padding: 1rem;
+    }
+
+    /* Header */
+    header {
+        padding-left: 0;
+        padding-top: 100px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        line-height: 1.3;
+    }
+
+    /* Logo */
+    .logo {
+        position: absolute;
+        top: 15px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 110px;
+    }
+
+    /* Vidéo */
+    video {
+        width: 95%;
+        max-width: none;
+    }
+
+    /* Boutons */
+    .video-controls {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+
+    /* Bouton contact */
+    .contact-fixed {
+        font-size: 0.85rem;
+        padding: 0.4rem 0.9rem;
+    }
+
+    footer p {
+        font-size: 0.85rem;
+    }
+}
+
